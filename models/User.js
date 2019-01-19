@@ -79,7 +79,7 @@ UserSchema.virtual(virtuales[0])
 ;
 
 UserSchema.pre('save',function (next) {
-  if(this.provider != providers[providers.length -1]) {
+  if(this.provider != providers[0]) {
     this.isVerified = true;
     next();
   } else
