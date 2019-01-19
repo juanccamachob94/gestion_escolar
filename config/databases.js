@@ -21,11 +21,11 @@ module.exports = {
           break;
         case 'test':
           credentials = {
-            user: "",
-            password: "",
-            host: "",
-            database: "",
-            port: ""
+            user: "test_heroku",
+            password: "dasd464dF3Iy9PaqAMnB4011srHFndOQ",
+            host: "ds161134.mlab.com",
+            database: "gestion_escolar",
+            port: "61134"
           };
           break;
         case 'production':
