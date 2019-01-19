@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  h1 Ya has iniciado sesión #{userSession.givenName} #{userSession.familyName}
+  if(userSession.provider === 'local')
+    img(src='../../images/profiles/' + userSession.photo)
+  else if(userSession.provider === 'facebook')
+    img(src='https://graph.facebook.com/' + userSession.username + '/picture?type=large&height=400&width=400')  
+  else
+    img(src=userSession.photo)
+  a(href="/user/logOut") Cerrar sesión

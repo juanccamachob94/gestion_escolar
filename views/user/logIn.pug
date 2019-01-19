@@ -1,0 +1,11 @@
+extends ../layout
+block content
+  form(action="/user/logIn" method="POST" enctype="multipart/form-data")
+    //Username
+    label(for="username") Username:
+    input(id="username" name="username" type="text" required=true)
+    //Password
+    label(for="password") Password:
+    input(id="password" name="password" type="password" required=true autocomplete="off")
+    //Button
+    input(type="submit" value="Login")
